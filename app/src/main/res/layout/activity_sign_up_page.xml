@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="13dp"
         app:layout_constraintBottom_toTopOf="@+id/editTextSignUpEmail"
@@ -30,7 +30,6 @@
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/editTextSignUpPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +45,6 @@
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
-        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/buttonSignUpSign"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

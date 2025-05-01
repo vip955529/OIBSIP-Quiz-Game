@@ -1,5 +1,7 @@
 package com.techvipin130524.quizgame;
 
+import static com.techvipin130524.quizgame.util.Const.default_web_client_id;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -120,7 +122,7 @@ public class Login_Page extends AppCompatActivity {
     public void signinGoogle() {
         GoogleSignInOptions googleSignInOptions = new GoogleSignInOptions
                 .Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken("318687690431-qjhikevolp7q2rgi6lrmrh5t3coqvh4v.apps.googleusercontent.com")
+                .requestIdToken(default_web_client_id)
                 .requestEmail()
                 .build();
 
@@ -153,7 +155,7 @@ public class Login_Page extends AppCompatActivity {
     private void firebaseSignInWithGoogle(Task<GoogleSignInAccount> task) {
         try {
             GoogleSignInAccount account = task.getResult(ApiException.class);
-            Toast.makeText(this, "Successfully", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Successfully : "+account.getEmail(), Toast.LENGTH_SHORT).show();
             Intent i = new Intent(Login_Page.this,MainActivity.class);
             startActivity(i);
             finish();

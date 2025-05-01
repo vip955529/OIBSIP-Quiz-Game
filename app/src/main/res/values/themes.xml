@@ -9,8 +9,8 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
 
-        <item name="colorPrimary">#FB7044</item>
-        <item name="colorPrimaryVariant">#FB7044</item>
+        <item name="colorPrimary">#F1F0E9</item>
+        <item name="colorPrimaryVariant">#41644A</item>
         <item name="colorOnPrimary">@color/white</item>
 
         <item name="colorSecondary">@color/teal_200</item>
@@ -25,8 +25,8 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
 
-        <item name="colorPrimary">#FB7044</item>
-        <item name="colorPrimaryVariant">#FB7044</item>
+        <item name="colorPrimary">@color/teal_200</item>
+        <item name="colorPrimaryVariant">@color/teal_200</item>
         <item name="colorOnPrimary">@color/white</item>
 
         <item name="colorSecondary">@color/teal_200</item>

@@ -241,6 +241,8 @@ public class Quiz_Page extends AppCompatActivity {
                 else {
                     Toast.makeText(Quiz_Page.this, "You answered all questions"
                             , Toast.LENGTH_SHORT).show();
+                    finish.setVisibility(View.VISIBLE);
+                    next.setVisibility(View.INVISIBLE);
                 }
 
 
